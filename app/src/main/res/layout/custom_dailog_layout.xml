@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="483dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/serviceRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/places_text_white_alpha_26"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/batteryRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Battery" />
+
+            <RadioButton
+                android:id="@+id/tyreRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Tyre" />
+
+            <RadioButton
+                android:id="@+id/towingRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Towing" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/service_description"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:hint="Service Description"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:background="#26d60f"
+            android:text="OK"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

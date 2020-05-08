@@ -1,0 +1,188 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MapsActivity"
+    android:id="@+id/rootView">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="94dp"-->
+    />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons"
+            >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+
+                android:layout_weight="1"
+                android:text="Back"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!--
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/customer_history_btn"
+                            android:layout_width="148dp"
+                            android:layout_height="68dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="History"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/customer_settings_btn"
+                            android:layout_width="148dp"
+                            android:layout_height="68dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Settings"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+            -->
+        </LinearLayout>
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            >
+
+
+            <fragment android:id="@+id/autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"            />
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_info"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:visibility="gone"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50sp"
+                android:text="Destination...">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customer_destination"
+                    android:paddingBottom="10sp" />-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/nearbyWorkshop"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:text="Find Nearby Workshop"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!--
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="50dp"
+            android:text="Show Popup"
+            android:onClick="showpopup"/>
+
+-->
+    </LinearLayout>
+
+
+
+
+    <!--
+        <SearchView
+            android:id="@+id/sv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_round"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search.." />
+            -->
+
+
+
+
+</FrameLayout>
+
+
+

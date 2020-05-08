@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.core.widget.NestedScrollView
+    android:orientation="vertical"
+    tools:context=".HistorySingleActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/quantum_vanillablue200"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rideLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="service"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distance:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rideDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="distance"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time and Date:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/rideDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="date"
+            android:textSize="18sp" />
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/quantum_bluegrey700"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_default_user" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="name"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Phone Number:"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/userPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="phone"
+            android:textSize="18sp" />
+
+</LinearLayout>
+
+</LinearLayout>
+
+    <RatingBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ratingBar"
+        android:visibility="gone"
+        android:stepSize="1"
+        android:numStars="5"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/pay"
+        android:text="Pay Here"
+        android:visibility="gone"
+        android:enabled="false"/>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

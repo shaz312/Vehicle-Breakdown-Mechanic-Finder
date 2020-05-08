@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_move"
+        android:title="Move to"/>
+    <item
+        android:id="@+id/action_label"
+        android:title="Change labels"/>
+    <item
+        android:id="@+id/action_important"
+        android:title="Mark important"/>
+    <item
+        android:id="@+id/action_mute"
+        android:title="Mute"/>
+    <item
+        android:id="@+id/action_Print"
+        android:title="Print"/>
+
+</menu>

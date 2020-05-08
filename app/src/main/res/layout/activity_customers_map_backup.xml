@@ -1,0 +1,189 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CustomersMapActivity">
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="669dp" />
+        <!--android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="94dp"-->
+    />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/customer_logout_btn"
+            android:layout_width="152dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="2dp"
+            android:text="Logout"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/customer_settings_btn"
+            android:layout_width="148dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Settings"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_info"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/driver_profileImage"
+            android:src="@mipmap/ic_default_user"
+            android:padding="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40sp"
+            android:text="Destination...">
+
+            <!--<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_destination"
+                android:paddingBottom="10sp" />-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_name"
+                android:paddingBottom="10sp"
+                android:paddingTop="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_phone"
+                android:paddingBottom="10sp"
+                android:paddingTop="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/driver_car"
+                android:paddingBottom="10sp"
+                android:paddingTop="20sp"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Battery"
+            android:id="@+id/battery"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tyre"
+            android:id="@+id/tyre"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Towing"
+            android:id="@+id/towing"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/customer_call_cab_btn"
+        android:layout_width="401dp"
+        android:layout_height="73dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="Request service"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+
+
+
+    <!--
+        <SearchView
+            android:id="@+id/sv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_round"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search.." />
+            -->
+
+
+
+
+</FrameLayout>
+
+
+
+
+
+

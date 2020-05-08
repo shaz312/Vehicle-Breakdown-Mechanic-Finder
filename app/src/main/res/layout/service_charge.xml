@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="483dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_chargeAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service Charge:"
+            android:textSize="36sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/service_charge"
+            android:layout_width="match_parent"
+            android:layout_height="153dp"
+            android:text="Service Charge"
+            android:textSize="36sp">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/service_ExtraCharge"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:hint="Service Extra Charge"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

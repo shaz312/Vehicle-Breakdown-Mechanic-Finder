@@ -1,0 +1,303 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".CustomersMapActivity"
+    android:id="@+id/rootView">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="94dp"-->
+    />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttons"
+            >
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+
+                android:layout_weight="1"
+                android:text="Back"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnWorkshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Workshop" />
+
+            <!--
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/customer_history_btn"
+                            android:layout_width="148dp"
+                            android:layout_height="68dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="History"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:id="@+id/customer_settings_btn"
+                            android:layout_width="148dp"
+                            android:layout_height="68dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:text="Settings"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+            -->
+        </LinearLayout>
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+           >
+
+
+            <fragment android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"            />
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/driver_info"
+            android:orientation="horizontal"
+            android:background="@color/quantum_tealA700"
+            android:visibility="gone"
+
+            >
+
+            <ImageView
+                android:layout_width="100sp"
+                android:layout_height="100sp"
+                android:id="@+id/driver_profileImage"
+                android:src="@mipmap/ic_default_user"
+                android:padding="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="50sp"
+                android:text="Destination...">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customer_destination"
+                    android:paddingBottom="10sp" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_name"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_phone"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/driver_car"
+                    android:paddingBottom="10sp"
+                    android:paddingTop="20sp"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:stepSize="0.1"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/c2"
+            android:orientation="horizontal">
+-->
+
+            <RadioButton
+
+                android:id="@+id/battery"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:text="Battery" />
+
+            <RadioButton
+                android:id="@+id/tyre"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:text="Tyre" />
+
+            <RadioButton
+                android:id="@+id/towing"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="Others" />
+
+        </RadioGroup>
+
+
+        <Button
+
+            android:id="@+id/customer_call_cab_btn"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:text="Request service"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/customer_call_btn"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+
+            android:text="CANCEL" />
+
+        <Button
+            android:id="@+id/customer_end_btn"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:visibility="gone"
+            android:text="END SERVICE"/>
+
+        <Button
+            android:id="@+id/customer_message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:visibility="gone"
+            android:text="Message"/>
+
+        <!--
+                <Button
+
+                    android:id="@+id/customer_call_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:text="Request "
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+        -->
+
+        <!--
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="50dp"
+            android:text="Show Popup"
+            android:onClick="showpopup"/>
+
+-->
+
+
+    </LinearLayout>
+
+
+
+    <!--
+        <SearchView
+            android:id="@+id/sv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_round"
+            android:elevation="5dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search.." />
+            -->
+
+
+
+
+</FrameLayout>
+
+
+
+
+
+
