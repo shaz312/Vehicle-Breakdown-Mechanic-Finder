@@ -11,6 +11,9 @@ P.S: If you're going to download the full project please use your own firebase A
 
 3 - google maps 1 - Add your project to the google API console (https://console.cloud.google.com/apis?pli=1) 2 - Activate google Maps API 3 - Activate google Places API 4 - Add google maps API key to the res/values/Strings.xml file in the string google_maps_key
 
-4 - PayPal 1 - Install Node.js. Check my video to see how it is done (https://www.youtube.com/watch?v=nLxH15a4-6g&list=PLxabZQCAe5fgXx8cn2iKOtt0VFJrf5bOd&index=42); 2 - go to paypal developer and create an app; 3 - enable payouts in the app you've just created; 4 - Add the paypal credentials to the node.js project. Again follow the youtube video to see how it is done; 5 - Set the fee in your index.js file to the percentage that you want 6 - deploy the project; 7 - Go to the android studio -> java -> your package name -> PayPalConfig: a) add the PAYPAL_CLIENT_ID which you get from the paypal developer control Panel; b) add the PAYPAL_PAYOUT_URL which you get in the firebase control panel -> functions and the url that you want is the payouts;
+4 - PayPal 1 - Go to paypal developer and create an app; 2 - enable payouts in the app you've just created; 3 - Add the paypal credentials to the project; 4 - Set the fee in your index.js file to the percentage that you want 5 - deploy the project; 6 - Go to the android studio -> java -> your package name -> PayPalConfig: a) add the PAYPAL_CLIENT_ID which you get from the paypal developer control Panel; b) add the PAYPAL_PAYOUT_URL which you get in the firebase control panel -> functions and the url that you want is the payouts;
 
-![Screenshot_20200210-090757](https://user-images.githubusercontent.com/28781884/83223729-398aca80-a1ae-11ea-8e4a-b8165337c595.png)
+
+### Screenshot
+
+<img src=https://user-images.githubusercontent.com/28781884/83223729-398aca80-a1ae-11ea-8e4a-b8165337c595.png width="300">|<img src=https://user-images.githubusercontent.com/28781884/83224886-1a416c80-a1b1-11ea-8b1c-9baf9792b16d.PNG width="300">
